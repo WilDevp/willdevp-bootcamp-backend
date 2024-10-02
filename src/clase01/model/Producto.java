@@ -6,7 +6,7 @@ public class Producto {
     private int id;
 
     //constructor
-    public Producto(String nombre, double precio, int id){
+    public Producto(int id, String nombre, double precio){
         this.nombre = nombre;
         this.precio = precio;
         this.id = id;
@@ -41,7 +41,7 @@ public class Producto {
     }
 
     public void mostrarInformacion(){
-        System.out.println("ID: " + id + "Nombre: " + nombre + "Precio: $" + precio);
+        System.out.println("ID: " + id + " Nombre: " + nombre + " Precio: $" + precio);
     }
 
 }

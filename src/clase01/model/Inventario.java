@@ -44,7 +44,7 @@ public class Inventario {
         }
     }
 
-    public void modificarProducto(int id, String nombre, double precio){
+    public void actualizarProducto(int id, String nombre, double precio){
         Producto producto = buscarProducto(id);
         if (producto != null){
             producto.setNombre(nombre);

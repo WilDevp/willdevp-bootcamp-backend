@@ -3,15 +3,15 @@ package clase01.model;
 public class ProductoEnOferta extends Producto{
     private double descuento;
 
-    public ProductoEnOferta(String nombre, double precio, int id, double descuento) {
-        super(nombre, precio, id); // Llamamos al constructor de la clase padre
+    public ProductoEnOferta(int id, String nombre, double precio, double descuento) {
+        super(id, nombre, precio); // Llamamos al constructor de la clase padre
         this.descuento = descuento;
     }
 
     @Override
     public void mostrarInformacion(){
         double precioFinal = getPrecio() - (getPrecio() * descuento);
-        System.out.println("ID: " + getId() + "Nombre: " + getNombre() + "Precio Original: $" + getPrecio() + "Precio con Descuento: " + precioFinal);
+        System.out.println("ID: " + getId() + " Nombre: " + getNombre() + " Precio Original: $" + getPrecio() + " Precio con Descuento: " + precioFinal);
     }
 
     public void setDescuento(double descuento){
